@@ -125,9 +125,9 @@ $$\begin{cases} x^2 + y^2 - 2x - 3 = 0 & (\mathcal{C}) \\ 3x + y - 5 = 0 & (L) \
 6. Determinamos los puntos de intersección resolviendo la ecuación cuadrática por factorización:
    $$(5x - 11)(x - 1) = 0$$
    * Para $x_1 = 1$: $y_1 = 5 - 3(1) = 2 \implies P_1(1, 2)$
-   * Para $x_2 = \frac{11}{5} = 2.2$: $y_2 = 5 - 3(2.2) = -1.6 \implies P_2\left(\frac{11}{5}, -\frac{8}{5}\right)$
+   * Para $x_2 = \frac{11}{5}$: $y_2 = 5 - 3\left(\frac{11}{5}\right) = -\frac{8}{5} \implies P_2\left(\frac{11}{5}, -\frac{8}{5}\right)$
 
-**Respuesta:** La recta es **secante** a la circunferencia, intersecándola en los puntos $\mathbf{P_1(1, 2)}$ y $\mathbf{P_2(2.2, -1.6)}$.
+**Respuesta:** La recta es **secante** a la circunferencia, intersecándola en los puntos $\mathbf{P_1(1, 2)}$ y $\mathbf{P_2\left(\frac{11}{5}, -\frac{8}{5}\right)}$.
 
 ---
 
@@ -199,11 +199,11 @@ Sean los puntos $A(2, 0)$, $B(2, 3)$, y $C(1, 3)$.
 > **Justificación Pedagógica:** Aplicamos la condición de perpendicularidad entre la recta tangente y el radio vector en el punto de contacto $B(2, 3)$.
 
 **Desarrollo:**
-* Circunferencia: $\left(x - \frac{3}{2}\right)^2 + \left(y - \frac{3}{2}\right)^2 = \frac{5}{2}$ con centro $C(1.5, 1.5)$.
+* Circunferencia: $\left(x - \frac{3}{2}\right)^2 + \left(y - \frac{3}{2}\right)^2 = \frac{5}{2}$ con centro $C\left(\frac{3}{2}, \frac{3}{2}\right)$.
 * Punto de tangencia: $B(2, 3)$.
 
 1. Calculamos la pendiente del radio vector $CB$ (pendiente normal):
-   $$m_N = \frac{3 - 1.5}{2 - 1.5} = \frac{1.5}{0.5} = 3$$
+   $$m_N = \frac{3 - \frac{3}{2}}{2 - \frac{3}{2}} = \frac{\frac{3}{2}}{\frac{1}{2}} = 3$$
 2. Obtenemos la pendiente de la recta tangente:
    $$m_T = -\frac{1}{m_N} = -\frac{1}{3}$$
 3. Escribimos la ecuación de la recta tangente punto-pendiente que pasa por $B(2, 3)$:
@@ -311,10 +311,10 @@ $$\begin{cases} x^2 + y^2 - 2x - 3 = 0 & (\mathcal{C}) \\ 2x - y = 0 \implies y 
 2. Resolvemos por factorización:
    $$(5x + 3)(x - 1) = 0$$
    * Para $x_1 = 1$: $y_1 = 2(1) = 2 \implies P_1(1, 2)$
-   * Para $x_2 = -\frac{3}{5} = -0.6$: $y_2 = 2(-0.6) = -1.2 \implies P_2(-0.6, -1.2)$
+   * Para $x_2 = -\frac{3}{5}$: $y_2 = 2\left(-\frac{3}{5}\right) = -\frac{6}{5} \implies P_2\left(-\frac{3}{5}, -\frac{6}{5}\right)$
    Al tener dos soluciones distintas, es una recta **secante**.
 
-**Respuesta:** La recta es **secante** con puntos de corte $\mathbf{P_1(1, 2)}$ y $\mathbf{P_2(-0.6, -1.2)}$.
+**Respuesta:** La recta es **secante** con puntos de corte $\mathbf{P_1(1, 2)}$ y $\mathbf{P_2\left(-\frac{3}{5}, -\frac{6}{5}\right)}$.
 
 ---
 
@@ -357,7 +357,7 @@ Sean los puntos $P(2, -1)$, $A(3, 0)$ y $C(0, -2)$. Resolvemos determinando el c
 5. Planteamos la ecuación:
    $$\left(x + \frac{3}{2}\right)^2 + \left(y - \frac{7}{2}\right)^2 = \frac{65}{2}$$
 
-**Respuesta:** La ecuación de la circunferencia es $\mathbf{\left(x + \frac{3}{2}\right)^2 + \left(y - \frac{7}{2}\right)^2 = 32.5}$.
+**Respuesta:** La ecuación de la circunferencia es $\mathbf{\left(x + \frac{3}{2}\right)^2 + \left(y - \frac{7}{2}\right)^2 = \frac{65}{2}}$.
 
 ---
 
@@ -462,17 +462,17 @@ Sean los puntos $P(2, -1)$, $A(3, 0)$ y $C(0, -2)$. Resolvemos determinando el c
 
 * **f) $x^2 + 2y^2 + 4x + 2y - 27 = 0$**
   $$(x^2 + 4x) + 2(y^2 + y) = 27 \implies (x+2)^2 - 4 + 2\left(\left(y+\frac{1}{2}\right)^2 - \frac{1}{4}\right) = 27$$
-  $$(x+2)^2 + 2\left(y+\frac{1}{2}\right)^2 - 4.5 = 27 \implies (x+2)^2 + 2\left(y+\frac{1}{2}\right)^2 = 31.5 = \frac{63}{2}$$
-  Dividiendo por $31.5$:
-  $$\frac{(x+2)^2}{31.5} + \frac{\left(y+0.5\right)^2}{15.75} = 1$$
-  Representa una **elipse** horizontal con centro $C(-2, -0.5)$, $a = \sqrt{31.5}$ y $b = \sqrt{15.75}$.
+  $$(x+2)^2 + 2\left(y+\frac{1}{2}\right)^2 - \frac{9}{2} = 27 \implies (x+2)^2 + 2\left(y+\frac{1}{2}\right)^2 = \frac{63}{2}$$
+  Dividiendo por $\frac{63}{2}$:
+  $$\frac{(x+2)^2}{\frac{63}{2}} + \frac{\left(y+\frac{1}{2}\right)^2}{\frac{63}{4}} = 1$$
+  Representa una **elipse** horizontal con centro $C\left(-2, -\frac{1}{2}\right)$ con semiejes $a = \sqrt{\frac{63}{2}} = \frac{3\sqrt{14}}{2}$ y $b = \sqrt{\frac{63}{4}} = \frac{3\sqrt{7}}{2}$.
 
 * **g) $x^2 - y^2 + 3x - 2y - 43 = 0$**
   $$\left(x^2 + 3x\right) - \left(y^2 + 2y\right) = 43 \implies \left(x+\frac{3}{2}\right)^2 - \frac{9}{4} - \left((y+1)^2 - 1\right) = 43$$
   $$\left(x+\frac{3}{2}\right)^2 - (y+1)^2 = 43 + \frac{5}{4} = \frac{177}{4}$$
   Dividiendo por $\frac{177}{4}$:
-  $$\frac{\left(x+1.5\right)^2}{177/4} - \frac{(y+1)^2}{177/4} = 1$$
-  Representa una **hipérbola** equilátera horizontal con centro $C(-1.5, -1)$ y semiejes $a = b = \frac{\sqrt{177}}{2}$.
+  $$\frac{\left(x+\frac{3}{2}\right)^2}{\frac{177}{4}} - \frac{(y+1)^2}{\frac{177}{4}} = 1$$
+  Representa una **hipérbola** equilátera horizontal con centro $C\left(-\frac{3}{2}, -1\right)$ y semiejes $a = b = \frac{\sqrt{177}}{2}$.
 
 * **h) $y^2 - 8x - 6y + 49 = 0$**
   $$(y^2 - 6y) = 8x - 49 \implies (y-3)^2 - 9 = 8x - 49 \implies (y-3)^2 = 8(x-5)$$
@@ -683,7 +683,7 @@ Ecuación general: $2x^2 - 4x - 2y - 4 = 0$.
    * Foco: $F\left(1, -3 + \frac{1}{4}\right) = F\left(1, -\frac{11}{4}\right)$
    * Directriz: $y = -3 - \frac{1}{4} = -\frac{13}{4}$
 
-**Respuesta:** Ecuación canónica: $\mathbf{(x - 1)^2 = y + 3}$, Vértice $\mathbf{V(1, -3)}$, Foco $\mathbf{F(1, -2.75)}$ y directriz $\mathbf{y = -3.25}$.
+**Respuesta:** Ecuación canónica: $\mathbf{(x - 1)^2 = y + 3}$, Vértice $\mathbf{V(1, -3)}$, Foco $\mathbf{F\left(1, -\frac{11}{4}\right)}$ y directriz $\mathbf{y = -\frac{13}{4}}$.
 
 ---
 

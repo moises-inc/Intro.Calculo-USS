@@ -338,14 +338,31 @@ El valor de $a$ debe ser **$-\frac{4}{3}$**.
 - **A.H.:** $\lim_{x \to \pm\infty} f(x) = 0 \implies \mathbf{y = 0}$ es A.H.
 - **A.O.:** No existen (al haber A.H. en ambos extremos).
 
-#### (b) $f(x) = \frac{1}{x} + \frac{1}{|x| + 1}$
-- **Dom($f$):** $\mathbb{R} \setminus \{0\}$.
+#### (b) $f(x) = \frac{1}{x + \frac{1}{|x|}}$
+- **Dom($f$):** 
+  La función está indefinida si el denominador principal es cero, o si el término $|x|$ en el denominador de la fracción interna es cero.
+  - Para $x = 0$, la expresión $\frac{1}{|x|}$ está indefinida.
+  - Para $x > 0$: $x + \frac{1}{x} = 0 \implies x^2 + 1 = 0$, que no posee soluciones reales.
+  - Para $x < 0$: $x - \frac{1}{x} = 0 \implies x^2 - 1 = 0 \implies x = -1$ (ya que $x < 0$).
+  Por tanto, el dominio es $\text{Dom}(f) = \mathbb{R} \setminus \{-1, 0\}$.
 - **A.V.:**
-  - $\lim_{x \to 0^+} f(x) = +\infty + 1 = +\infty$
-  - $\lim_{x \to 0^-} f(x) = -\infty + 1 = -\infty$
-  $\implies \mathbf{x = 0}$ es A.V.
-- **A.H.:** $\lim_{x \to \pm\infty} \left( \frac{1}{x} + \frac{1}{|x|+1} \right) = 0 + 0 = 0 \implies \mathbf{y = 0}$ es A.H.
+  Analizamos los límites laterales en los puntos de exclusión del dominio:
+  - En $x = -1$:
+    $$\lim_{x \to -1^+} \frac{1}{x - \frac{1}{x}} = \lim_{x \to -1^+} \frac{x}{x^2 - 1} = +\infty \quad (\text{debido a que } x^2 - 1 \to 0^- \text{ y } x \to -1)$$
+    $$\lim_{x \to -1^-} \frac{1}{x - \frac{1}{x}} = \lim_{x \to -1^-} \frac{x}{x^2 - 1} = -\infty \quad (\text{debido a que } x^2 - 1 \to 0^+ \text{ y } x \to -1)$$
+    Por lo tanto, la recta **$x = -1$** es una asíntota vertical.
+  - En $x = 0$:
+    $$\lim_{x \to 0^+} \frac{1}{x + \frac{1}{x}} = \lim_{x \to 0^+} \frac{x}{x^2 + 1} = 0$$
+    $$\lim_{x \to 0^-} \frac{1}{x - \frac{1}{x}} = \lim_{x \to 0^-} \frac{x}{x^2 - 1} = 0$$
+    Como ambos límites laterales son finitos (e iguales a $0$), $x = 0$ no es una asíntota vertical (es una discontinuidad evitable).
+- **A.H.:**
+  - Para $x \to +\infty$:
+    $$\lim_{x \to +\infty} \frac{1}{x + \frac{1}{x}} = 0 \implies \mathbf{y = 0} \text{ es A.H. en } +\infty$$
+  - Para $x \to -\infty$:
+    $$\lim_{x \to -\infty} \frac{1}{x - \frac{1}{x}} = 0 \implies \mathbf{y = 0} \text{ es A.H. en } -\infty$$
 - **A.O.:** No existen.
+
+
 
 #### (c) $f(x) = \frac{\sqrt{x^2 - 1} + x}{\sqrt{x^2 - 1}} = 1 + \frac{x}{\sqrt{x^2 - 1}}$
 - **Dom($f$):** $x^2 - 1 > 0 \implies (-\infty, -1) \cup (1, +\infty)$.
@@ -394,13 +411,34 @@ El valor de $a$ debe ser **$-\frac{4}{3}$**.
 - **A.H.:** $\lim_{x \to \pm\infty} \frac{x^2 - 1}{x^2 - 2|x|} = 1 \implies \mathbf{y = 1}$ es A.H.
 - **A.O.:** No existen.
 
-#### (h) $g(x) = \begin{cases} \frac{2x^2 + 1}{2x^3 + 2x} & \text{si } x < 0 \\ \frac{x^3}{2} + \frac{1}{\sqrt{x} + 1} & \text{si } x > 0 \end{cases}$
-*(Nota: Analizamos los dos posibles casos de transcripción para la rama derecha).*
-- **A.V.:** Para la rama izquierda ($x < 0$), el denominador es $2x(x^2+1) = 0 \implies x = 0$. $\lim_{x \to 0^-} g(x) = -\infty \implies \mathbf{x = 0}$ es A.V.
-- **A.H. y A.O. en $-\infty$:** $\lim_{x \to -\infty} \frac{2x^2+1}{2x(x^2+1)} = 0 \implies \mathbf{y = 0}$ es A.H. en $-\infty$.
-- **Asíntota en $+\infty$:**
-  - **Caso $g(x) = \frac{x^3}{2} + \frac{1}{\sqrt{x}+1}$:** Como crece como $x^3$, no hay asíntotas en $+\infty$.
-  - **Caso $g(x) = \frac{x}{2} + \frac{1}{\sqrt{x}+1}$:** Como $\lim_{x \to +\infty} \left(g(x) - \frac{x}{2}\right) = 0 \implies \mathbf{y = \frac{x}{2}}$ es A.O. en $+\infty$.
+#### (h) $g(x) = \begin{cases} \frac{2x^2 + 1}{2x^3 + 2x} & \text{si } x < 0 \\ \frac{x^{3/2} + 1}{\sqrt{x} + 1} & \text{si } x > 0 \end{cases}$
+- **Dom($g$):**
+  - Para $x < 0$, la expresión $\frac{2x^2 + 1}{2x(x^2 + 1)}$ está bien definida ya que el denominador no se anula para valores negativos.
+  - Para $x = 0$, la función no está definida.
+  - Para $x > 0$, la expresión $\frac{x^{3/2} + 1}{\sqrt{x} + 1}$ está bien definida porque $\sqrt{x} + 1 \geq 1$.
+  Por lo tanto, $\text{Dom}(g) = \mathbb{R} \setminus \{0\}$.
+- **Simplificación del trozo para $x > 0$:**
+  Haciendo la sustitución $u = \sqrt{x} > 0$, tenemos $x^{3/2} = u^3$. Por ende:
+  $$g(x) = \frac{u^3 + 1}{u + 1} = \frac{(u + 1)(u^2 - u + 1)}{u + 1} = u^2 - u + 1 = x - \sqrt{x} + 1$$
+- **A.V.:**
+  Analizamos el límite en la frontera del dominio, $x = 0$:
+  - Por la izquierda ($x \to 0^-$):
+    $$\lim_{x \to 0^-} g(x) = \lim_{x \to 0^-} \frac{2x^2 + 1}{2x(x^2 + 1)} = \frac{1}{0^-} = -\infty$$
+    Por lo tanto, la recta **$x = 0$** es una asíntota vertical.
+  - Por la derecha ($x \to 0^+$):
+    $$\lim_{x \to 0^+} g(x) = \lim_{x \to 0^+} (x - \sqrt{x} + 1) = 1$$
+- **Asíntotas en $-\infty$:**
+  - **A.H.:**
+    $$\lim_{x \to -\infty} g(x) = \lim_{x \to -\infty} \frac{2x^2 + 1}{2x^3 + 2x} = 0 \implies \mathbf{y = 0} \text{ es A.H. en } -\infty$$
+  - **A.O.:** No existen en $-\infty$ al haber asíntota horizontal.
+- **Asíntotas en $+\infty$:**
+  - **A.H.:**
+    $$\lim_{x \to +\infty} g(x) = \lim_{x \to +\infty} (x - \sqrt{x} + 1) = +\infty \implies \text{No hay A.H. en } +\infty$$
+  - **A.O.:**
+    Calculamos la pendiente $m$ y el término constante $n$:
+    $$m = \lim_{x \to +\infty} \frac{g(x)}{x} = \lim_{x \to +\infty} \frac{x - \sqrt{x} + 1}{x} = \lim_{x \to +\infty} \left( 1 - \frac{1}{\sqrt{x}} + \frac{1}{x} \right) = 1$$
+    $$n = \lim_{x \to +\infty} (g(x) - mx) = \lim_{x \to +\infty} (x - \sqrt{x} + 1 - x) = \lim_{x \to +\infty} (1 - \sqrt{x}) = -\infty$$
+    Como $n$ no es un valor real finito, no existe asíntota oblicua en $+\infty$.
 
 #### (i) $f(x) = \begin{cases} \frac{\sin(x^2)}{x} & \text{si } -5 < x < 0 \\ \frac{5x + x^2}{4x + 4} & \text{si } x \geq 0 \end{cases}$
 - **A.V.:** No posee A.V. en su dominio, ya que $\lim_{x \to 0^-} \frac{\sin(x^2)}{x} = 0$, y el denominador del segundo trozo se anula en $x = -1$ (fuera de su intervalo de definición $x \geq 0$).

@@ -3,7 +3,7 @@ id: "20260606-listado-9-resolucion"
 title: "Resolución Completa de Colección de Ejercicios N° 9"
 project: "Introducción al Cálculo"
 date: "2026-06-06T14:30:10"
-last_modified: "2026-06-06T14:40:50-04:00"
+last_modified: "2026-06-06T17:38:40-04:00"
 type: "academic-note"
 status: "completed"
 priority: "high"
@@ -926,10 +926,12 @@ Como $\lim_{x\to -1^-} f(x) = 2 \neq 1 = \lim_{x\to -1^+} f(x)$, los límites la
   **Respuesta:** $2e$
 
 - **dd)** Evaluación directa: El numerador tiende a $9$, el denominador a $2(2) - 2^2 = 0$.
+  *(Nota: Si la expresión original en el numerador se interpreta como $3x$ en vez de $3^x$, el comportamiento es idéntico: el numerador tiende a $6 > 0$ y el denominador a $0$, de modo que los límites laterales continúan siendo $+\infty$ y $-\infty$ respectivamente, y el límite global sigue sin existir).*
   Evaluamos por límites laterales debido al cambio de signo de la función cuadrática $x(2-x)$ en $x=2$:
   - Por la izquierda ($x \to 2^-$): $\frac{9}{0^+} = +\infty$
   - Por la derecha ($x \to 2^+$): $\frac{9}{0^-} = -\infty$
   **Respuesta:** No existe.
+
 
 ---
 
