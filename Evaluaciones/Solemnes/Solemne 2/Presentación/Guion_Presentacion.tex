@@ -1,0 +1,151 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+
+% --- COLORES INSTITUCIONALES USS ---
+\definecolor{USSBlue}{RGB}{0, 32, 91}    % Azul marino
+\definecolor{USSGold}{RGB}{212, 175, 55} % Dorado
+\definecolor{LightGray}{RGB}{245, 245, 247}
+
+% --- ESTILO DE PÁGINA Y AJUSTES DE CABECERA ---
+\setlength{\headheight}{25pt} % Ajuste recomendado para fancyhdr
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\color{USSBlue}\bfseries Guion de Exposición --- Solemne 2}
+\fancyhead[R]{\color{USSBlue}Introducción al Cálculo}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{USSBlue}\leaders\hrule height \headrulewidth\hfill}}
+
+\begin{document}
+
+\begin{center}
+    \begin{tcolorbox}[colback=USSBlue, colframe=USSBlue, sharp corners, halign=center, valign=center, colupper=white, bottom=1.5mm, top=1.5mm]
+        \Large\bfseries GUION DE EXPOSICIÓN ORAL --- PROBLEMA III \\
+        \large\mdseries Dinámica Orbital de Satélite y Sonda Aeroespacial (Diapositivas 23 a 27)
+    \end{tcolorbox}
+\end{center}
+
+\vspace{0.2cm}
+\noindent\textbf{Expositor:} Representante del Grupo 3 (Moisés Amundarain / Camila Aravena) \\
+\textbf{Tiempo Límite Estimado para el Bloque:} 3 minutos y 20 segundos (de un total de 15 minutos grupales) \\
+\textbf{Consejo General:} Mantén un tono formal, articulado y haz pausas estratégicas. Utiliza un puntero (físico o mouse) para guiar la atención hacia las fórmulas clave señaladas en el guion.
+
+\vspace{0.4cm}
+
+% --- DIAPOSITIVA 23 ---
+\begin{tcolorbox}[colframe=USSBlue, colback=white, title=\textbf{DIAPOSITIVA 23: Elementos de la Órbita Elíptica (Pág. 23)}, coltitle=white]
+    \small
+    \textbf{[Tiempo Recomendado:]} 40 segundos \hfill \textbf{[Foco Visual:]} Ecuación $\frac{x^2}{25} + \frac{y^2}{16} = 1$ y Focos $F_{1,2}(\pm 3, 0)$ \\
+    \textbf{[Qué señalar en la pantalla:]} La ecuación canónica horizontal, la escala del modelo ($1\text{ u} = 10.000\text{ km}$), y las coordenadas de los focos.
+    \hrule\vspace{0.2cm}
+    \textbf{Guion sugerido:}
+    \medskip
+    
+    {\itshape
+    ``Buenos días, profesor y compañeros. Entrando de lleno al Problema III, modelaremos el sistema orbital donde la Tierra se ubica en el origen de coordenadas. 
+    
+    Primero, caracterizamos la órbita elíptica estable de nuestro satélite meteorológico, descrita por esta ecuación canónica horizontal. De ella extraemos los semiejes: el semieje mayor $a$ de $5$ unidades, y el semieje menor $b$ de $4$ unidades. 
+    
+    Recordemos que en este modelo, \textbf{cada unidad cartesiana equivale exactamente a 10.000 kilómetros}. 
+    
+    Al aplicar la relación fundamental de la elipse, deducimos de forma exacta la semidistancia focal $c$ igual a $3$ unidades, lo que nos sitúa los focos del sistema elíptico en las coordenadas $F_1(-3,0)$ y $F_2(3,0)$, equivalentes a 30.000 kilómetros del centro de la Tierra.''}
+    \vspace{0.2cm}\hrule\vspace{0.15cm}
+    \textbf{Tip de Rigor:} Hacer énfasis en que las unidades cartesianas representan distancias reales ($1\text{ u} = 10.000\text{ km}$) demuestra la conexión directa entre el modelo matemático abstracto y la física del espacio.
+\end{tcolorbox}
+
+\newpage
+
+% --- DIAPOSITIVA 24 ---
+\begin{tcolorbox}[colframe=USSBlue, colback=white, title=\textbf{DIAPOSITIVA 24: Órbita de la Sonda Hiperbólica (Pág. 24)}, coltitle=white]
+    \small
+    \textbf{[Tiempo Recomendado:]} 45 segundos \hfill \textbf{[Foco Visual:]} ``Concurrencia focal recíproca'' y Asíntotas $y = \pm \frac{4}{3}x$ \\
+    \textbf{[Qué señalar en la pantalla:]} El término ``concurrencia focal recíproca'' en pantalla, la deducción de $b_{\mathcal{H}} = 4$ y la ecuación de las asíntotas lineales de escape.
+    \hrule\vspace{0.2cm}
+    \textbf{Guion sugerido:}
+    \medskip
+    
+    {\itshape
+    ``Para la trayectoria de escape de la sonda de exploración interplanetaria, la misión impone un requisito matemático de alta ingeniería: una \textbf{concurrencia focal recíproca}. Esto significa que los vértices de la hipérbola coinciden de manera exacta con los focos de la elipse del satélite, estableciendo nuestro semieje real $a$ en $3$ unidades.
+    
+    Sabiendo que la semidistancia focal de la hipérbola es $c=5$ unidades debido a la velocidad de escape requerida, calculamos mediante el teorema de Pitágoras hiperbólico el semieje imaginario $b$, el cual resulta ser de $4$ unidades.
+    
+    Así, obtenemos la ecuación canónica de la sonda hiperbólica en el eje horizontal, junto con sus asíntotas de escape lineales: $y = \pm \frac{4}{3}x$, las cuales dictan las trayectorias vectoriales asintóticas hacia el espacio profundo.''}
+    \vspace{0.2cm}\hrule\vspace{0.15cm}
+    \textbf{Tip de Rigor:} Pronuncia ``concurrencia focal recíproca'' despacio y de manera firme. Es el concepto rector que une las dos cónicas del problema y demuestra un entendimiento profundo del modelamiento dinámico.
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+% --- DIAPOSITIVA 25 ---
+\begin{tcolorbox}[colframe=USSBlue, colback=white, title=\textbf{DIAPOSITIVA 25: Intersección Analítica de Órbitas (Pág. 25)}, coltitle=white]
+    \small
+    \textbf{[Tiempo Recomendado:]} 40 segundos \hfill \textbf{[Foco Visual:]} Sistema no lineal de ecuaciones y valor de $y^2 = \frac{128}{17}$ \\
+    \textbf{[Qué señalar en la pantalla:]} Las ecuaciones (1) y (2), la supresión de $16x^2$ y el resultado decimal aproximado $y \approx \pm 2.74$.
+    \hrule\vspace{0.2cm}
+    \textbf{Guion sugerido:}
+    \medskip
+    
+    {\itshape
+    ``Al cruzarse ambas órbitas en el mismo plano bidimensional, el principal reto operacional consiste en hallar con precisión milimétrica los puntos de cruce para planificar la ventana de lanzamiento. Para ello, planteamos este sistema de ecuaciones de segundo grado.
+    
+    Aplicamos el método algebraico de reducción por resta directa. Al restar la ecuación de la hipérbola a la de la elipse, las componentes en $x^2$ se anulan limpiamente, lo que nos conduce a la ecuación linealizada en términos de la ordenada: $34y^2 = 256$.
+    
+    Al despejar la variable, obtenemos el valor exacto de la ordenada al cuadrado como $\frac{128}{17}$, lo que analíticamente nos entrega dos valores reales para la coordenada en $y$: aproximadamente más y menos $2.74$ unidades.''}
+    \vspace{0.2cm}\hrule\vspace{0.15cm}
+    \textbf{Tip de Rigor:} Explica brevemente por qué el método de reducción por resta es el más elegante aquí, ya que anula directamente los coeficientes cuadráticos de las abscisas ($16x^2$).
+\end{tcolorbox}
+
+\newpage
+
+% --- DIAPOSITIVA 26 ---
+\begin{tcolorbox}[colframe=USSBlue, colback=white, title=\textbf{DIAPOSITIVA 26: Coordenadas de Colisión Orbital (Pág. 26)}, coltitle=white]
+    \small
+    \textbf{[Tiempo Recomendado:]} 45 segundos \hfill \textbf{[Foco Visual:]} Coordenadas de Intersección Exactas e Interpretación Física \\
+    \textbf{[Qué señalar en la pantalla:]} Las coordenadas analíticas exactas $I\left( \pm \frac{15\sqrt{17}}{17}, \pm \frac{8\sqrt{34}}{17} \right)$ y sus aproximaciones decimales $(\pm 3.64, \pm 2.74)$.
+    \hrule\vspace{0.2cm}
+    \textbf{Guion sugerido:}
+    \medskip
+    
+    {\itshape
+    ``Sustituyendo este valor de la ordenada en nuestra ecuación hiperbólica original, despejamos la variable de la abscisa obteniendo de manera exacta $x = \pm \frac{15\sqrt{17}}{17}$, equivalente a aproximadamente más y menos $3.64$ unidades.
+    
+    Esto nos revela la existencia de \textbf{cuatro puntos de intersección perfectamente simétricos en el plano}. 
+    
+    Físicamente, estas coordenadas cartesianas exactas definen los cuatro puntos del espacio profundo donde las órbitas del satélite y la sonda se cruzan en una trayectoria de colisión. Este cálculo riguroso es indispensable para el equipo de dinámica de vuelo, ya que nos indica dónde se localizan las zonas de máximo riesgo e interfiere en la programación de la ventana de lanzamiento: la sonda debe ser lanzada cuando el satélite se ubique en la sección opuesta de la elipse.''}
+    \vspace{0.2cm}\hrule\vspace{0.15cm}
+    \textbf{Tip de Rigor:} Resalta que la precisión radical (las fracciones con raíces cuadradas) es lo que diferencia una simulación ordinaria de una planificación aeroespacial real de alta fidelidad, donde aproximar antes de tiempo acumula errores de curso catastróficos.
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+% --- DIAPOSITIVA 27 ---
+\begin{tcolorbox}[colframe=USSBlue, colback=white, title=\textbf{DIAPOSITIVA 27: Plano del Sistema Aeroespacial (Pág. 27)}, coltitle=white]
+    \small
+    \textbf{[Tiempo Recomendado:]} 30 segundos \hfill \textbf{[Foco Visual:]} Gráfico de GeoGebra y Puntos de Cruce Simétricos \\
+    \textbf{[Qué señalar en la pantalla:]} La elipse azul (satélite), la hipérbola naranja (sonda de escape), las asíntotas y las cuatro intersecciones rotuladas.
+    \hrule\vspace{0.2cm}
+    \textbf{Guion sugerido:}
+    \medskip
+    
+    {\itshape
+    ``Para validar de forma visual e inequívoca nuestros cálculos, aquí podemos observar la simulación gráfica del plano espacial en GeoGebra. 
+    
+    La órbita elíptica estable en color azul encierra los focos que coinciden de manera exacta con los vértices de la trayectoria naranja hiperbólica de la sonda de escape. Las líneas punteadas representan las asíntotas y, finalmente, podemos apreciar la coincidencia simétrica milimétrica de los cuatro puntos de intersección que acabamos de calcular algebraicamente.
+    
+    Con esto, demostramos cómo la geometría analítica y el cálculo se convierten en herramientas prácticas y esenciales para gobernar misiones en el espacio profundo de forma segura y exitosa. 
+    
+    Le cedo la palabra a mi compañero para analizar la dinámica y los parámetros del simulador orbital.''}
+    \vspace{0.2cm}\hrule\vspace{0.15cm}
+    \textbf{Tip de Rigor:} Al terminar, haz una leve reverencia de cabeza indicando seguridad y elegancia, antes de darle el pase al siguiente expositor de tu grupo.
+\end{tcolorbox}
+
+\end{document}
