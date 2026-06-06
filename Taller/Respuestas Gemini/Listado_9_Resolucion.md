@@ -82,7 +82,7 @@ Esta guía proporciona la resolución detallada y rigurosa de toda la Colección
 > - **f)** $\lim_{x\to 4} \frac{x^2-16}{x-4}$
 > - **g)** $\lim_{x\to 3} \frac{x^2-2x-3}{x-3}$
 > - **h)** $\lim_{h\to 0} \frac{(2+h)^3-8}{h}$
-> - **i)** $\lim_{x\to 1} \frac{2^{x^2-3x}}{-x^2+8x+3}$
+> - **i)** $\lim_{x\to 1/2} \frac{x^2-3x}{-x^2+8x+3}$
 > - **j)** $\lim_{x\to 1} \left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^3$
 > - **k)** $\lim_{x\to 2} \left( 3x^2 + \frac{1}{2}\sqrt[3]{\frac{x^3-4x+3}{x^5-2x^2+3}} \right)$
 > - **l)** $\lim_{x\to 6} (2x+1)^3(x-2)^4$
@@ -136,8 +136,8 @@ Esta guía proporciona la resolución detallada y rigurosa de toda la Colección
   **Respuesta:** $12$
 
 - **i)** Evaluación directa (denominador no nulo):
-  $$\lim_{x\to 1} \frac{2^{x^2-3x}}{-x^2+8x+3} = \frac{2^{1^2 - 3(1)}}{-1^2 + 8(1) + 3} = \frac{2^{-2}}{10} = \frac{1/4}{10} = \frac{1}{40}$$
-  **Respuesta:** $\frac{1}{40}$
+  $$\lim_{x\to 1/2} \frac{x^2-3x}{-x^2+8x+3} = \frac{(1/2)^2 - 3(1/2)}{-(1/2)^2 + 8(1/2) + 3} = \frac{1/4 - 3/2}{-1/4 + 4 + 3} = \frac{-5/4}{27/4} = -\frac{5}{27}$$
+  **Respuesta:** $-\frac{5}{27}$
 
 - **j)** Evaluación directa por sustitución:
   $$\lim_{x\to 1} \left(\sqrt{x} + \frac{1}{\sqrt{x}}\right)^3 = \left(\sqrt{1} + \frac{1}{\sqrt{1}}\right)^3 = (1 + 1)^3 = 8$$
