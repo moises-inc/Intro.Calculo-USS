@@ -1,0 +1,355 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{booktabs}
+
+% Configuración de márgenes de página
+\geometry{
+    letterpaper,
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=2.5cm
+}
+
+% Quitar sangría por defecto si se desea o dejar configuración estándar
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{0.15cm}
+
+\begin{document}
+
+% ==========================================
+% ENCABEZADO INSTITUCIONAL
+% ==========================================
+\begin{center}
+    {\large \textbf{DEPARTAMENTO DE MATEMÁTICA Y CIENCIAS BÁSICAS}} \\
+    {\small Introducción al Cálculo / Cálculo Diferencial e Integral} \\
+    \vspace{0.3cm}
+    {\Large \textbf{GUÍA DE ESTUDIO COMPLEMENTARIA: LÍMITES Y CONTINUIDAD}} \\
+    {\small \textit{Enfoque en el Cálculo Práctico y la Rigurosidad Algebraica}} \\
+    \vspace{0.2cm}
+    \rule{\textwidth}{0.8pt}
+\end{center}
+
+\vspace{0.3cm}
+Esta guía de estudio recopila un conjunto de ejercicios seleccionados y ordenados por nivel de dificultad progresiva (básico, intermedio y avanzado). Su objetivo principal es fortalecer las destrezas de cálculo práctico, la manipulación algebraica rigurosa de indeterminaciones, la aplicación de límites notables y el análisis de la continuidad utilizando el Teorema de Bolzano. Se excluyen demostraciones abstractas formales de tipo $\varepsilon-\delta$.
+
+---
+
+% ==========================================
+% SECCIÓN DE EJERCICIOS PROPUESTOS
+% ==========================================
+\section{Ejercicios Propuestos}
+
+\subsection{Sección I: Límites Algebraicos Indeterminados ($0/0$)}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item \textbf{(Básico)} Calcule el siguiente límite factorizando polinomios de segundo grado:
+    $$\lim_{x\to 4} \frac{x^2 - 16}{x^2 - 5x + 4}$$
+    
+    \item \textbf{(Intermedio)} Evalúe el límite aplicando la técnica de racionalización simple del numerador:
+    $$\lim_{x\to 1} \frac{\sqrt{x+3} - 2}{x^2 - 1}$$
+    
+    \item \textbf{(Avanzado)} Resuelva el límite empleando un cambio de variable adecuado para eliminar los radicales de diferente índice:
+    $$\lim_{x\to 1} \frac{\sqrt[3]{x} - 1}{\sqrt[4]{x} - 1}$$
+\end{enumerate}
+
+\subsection{Sección II: Límites Trigonométricos Notables}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \setcounter{enumerate}{\value{enumi}}
+    \item \textbf{(Básico)} Determine el límite utilizando la propiedad notable $\lim_{u\to 0} \frac{\sin(u)}{u} = 1$:
+    $$\lim_{x\to 0} \frac{\tan(3x)}{\sin(5x)}$$
+    
+    \item \textbf{(Intermedio)} Calcule el límite mediante un cambio de variable que traslade el punto de acumulación al origen y el uso de identidades de adición de ángulos:
+    $$\lim_{x\to \pi/4} \frac{\cos(x) - \sin(x)}{\pi - 4x}$$
+    
+    \item \textbf{(Avanzado)} Evalúe el límite aplicando identidades trigonométricas fundamentales y el límite notable $\lim_{x\to 0} \frac{1-\cos(x)}{x^2} = \frac{1}{2}$:
+    $$\lim_{x\to 0} \frac{1 - \cos^3(x)}{x\sin(x)}$$
+\end{enumerate}
+
+\subsection{Sección III: Límites al Infinito y Asintóticos}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \setcounter{enumerate}{\value{enumi}}
+    \item \textbf{(Básico)} Evalúe el comportamiento al infinito de la siguiente función racional analizando sus grados dominantes:
+    $$\lim_{x\to \infty} \frac{5x^3 - 2x + 1}{3 - 2x^2 - 4x^3}$$
+    
+    \item \textbf{(Intermedio)} Resuelva la indeterminación del tipo $\infty - \infty$ multiplicando por el conjugado radical en el infinito positivo:
+    $$\lim_{x\to +\infty} \left( \sqrt{x^2 + 5x} - x \right)$$
+    
+    \item \textbf{(Avanzado)} Calcule el límite lateral tendiendo a $-\infty$, analizando con cuidado la definición del valor absoluto al extraer la potencia principal de la raíz del denominador:
+    $$\lim_{x\to -\infty} \frac{2x - 3}{\sqrt{9x^2 + 4x - 1}}$$
+\end{enumerate}
+
+\subsection{Sección IV: Continuidad y Teorema de Bolzano}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \setcounter{enumerate}{\value{enumi}}
+    \item \textbf{(Intermedio)} Determine los valores de las constantes reales $a$ y $b$ que garantizan la continuidad de la función $f(x)$ en todo su dominio de definición:
+    $$f(x) = \begin{cases} 
+        ax + b & \text{si } x < -1 \\ 
+        x^2 - 2 & \text{si } -1 \leq x \leq 2 \\ 
+        \frac{2x - a}{x} & \text{si } x > 2 
+    \end{cases}$$
+    
+    \item \textbf{(Intermedio)} Demuestre, haciendo uso del Teorema de los ceros de Bolzano, que la ecuación polinómica posee al menos una solución real en el intervalo indicado:
+    $$x^5 - 3x - 1 = 0, \quad \text{en } I = [1, 2]$$
+\end{enumerate}
+
+\subsection{Sección V: Derivada por Definición}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \setcounter{enumerate}{\value{enumi}}
+    \item \textbf{(Intermedio)} Utilizando estrictamente la definición formal de derivada mediante cociente de diferencias y cálculo de límite, halle $f'(x)$ para la siguiente función racional:
+    $$f(x) = \frac{1}{x+3}, \quad x \neq -3$$
+\end{enumerate}
+
+\newpage
+
+% ==========================================
+% SECCIÓN DEL SOLUCIONARIO DETALLADO
+% ==========================================
+\section{Solucionario Detallado}
+
+\subsection{Resolución Sección I: Límites Algebraicos Indeterminados}
+
+\paragraph{Solución Ejercicio 1:}
+Evaluamos directamente sustituyendo $x = 4$ en la expresión racional:
+$$\frac{4^2 - 16}{4^2 - 5(4) + 4} = \frac{16 - 16}{16 - 20 + 4} = \frac{0}{0}$$
+La indeterminación indica que $x = 4$ es una raíz común de ambos polinomios, lo que permite simplificar la expresión mediante factorización.
+\begin{enumerate}
+    \item \textbf{Factorización del numerador:} Corresponde a una diferencia de cuadrados perfectos:
+    $$x^2 - 16 = (x - 4)(x + 4)$$
+    \item \textbf{Factorización del denominador:} Buscamos dos números que multiplicados den $4$ y sumados den $-5$. Estos números son $-4$ y $-1$:
+    $$x^2 - 5x + 4 = (x - 4)(x - 1)$$
+    \item \textbf{Simplificación y cálculo del límite:} Para todo $x \neq 4$, podemos cancelar el factor común $(x - 4)$:
+    $$\lim_{x\to 4} \frac{x^2 - 16}{x^2 - 5x + 4} = \lim_{x\to 4} \frac{(x - 4)(x + 4)}{(x - 4)(x - 1)} = \lim_{x\to 4} \frac{x + 4}{x - 1}$$
+    Evaluando por sustitución directa en el límite simplificado:
+    $$\lim_{x\to 4} \frac{x + 4}{x - 1} = \frac{4 + 4}{4 - 1} = \frac{8}{3}$$
+\end{enumerate}
+\textbf{Respuesta:} El valor del límite es $\mathbf{\frac{8}{3}}$.
+
+\paragraph{Solución Ejercicio 2:}
+Sustituyendo $x = 1$ en la función obtenemos:
+$$\frac{\sqrt{1+3} - 2}{1^2 - 1} = \frac{2 - 2}{0} = \frac{0}{0}$$
+Para romper esta indeterminación radical, multiplicamos y dividimos por la expresión conjugada del numerador, esto es, $(\sqrt{x+3} + 2)$:
+$$\lim_{x\to 1} \frac{\sqrt{x+3} - 2}{x^2 - 1} \cdot \frac{\sqrt{x+3} + 2}{\sqrt{x+3} + 2}$$
+\begin{enumerate}
+    \item \textbf{Operación en el numerador:} Aplicamos la suma por diferencia $(A-B)(A+B) = A^2 - B^2$:
+    $$(\sqrt{x+3} - 2)(\sqrt{x+3} + 2) = (\sqrt{x+3})^2 - 2^2 = (x + 3) - 4 = x - 1$$
+    \item \textbf{Operación en el denominador:} Factorizamos la diferencia de cuadrados $x^2 - 1 = (x - 1)(x + 1)$ y mantenemos el factor conjugado:
+    $$(x^2 - 1)(\sqrt{x+3} + 2) = (x - 1)(x + 1)(\sqrt{x+3} + 2)$$
+    \item \textbf{Cálculo final:} Cancelamos el término indeterminado $(x-1)$ para todo $x \neq 1$:
+    $$\lim_{x\to 1} \frac{x - 1}{(x - 1)(x + 1)(\sqrt{x+3} + 2)} = \lim_{x\to 1} \frac{1}{(x + 1)(\sqrt{x+3} + 2)}$$
+    Sustituimos $x = 1$:
+    $$\frac{1}{(1 + 1)(\sqrt{1+3} + 2)} = \frac{1}{2 \cdot (2 + 2)} = \frac{1}{2 \cdot 4} = \frac{1}{8}$$
+\end{enumerate}
+\textbf{Respuesta:} El límite es igual a $\mathbf{\frac{1}{8}}$.
+
+\paragraph{Solución Ejercicio 3:}
+Evaluando directamente en $x=1$ se presenta la indeterminación $\frac{0}{0}$. Para resolver de forma simplificada, evitamos la racionalización múltiple introduciendo un cambio de variable algebraico.
+\begin{enumerate}
+    \item \textbf{Definición de la nueva variable:} Elegimos como exponente el mínimo común múltiplo (m.c.m.) de los índices de las raíces del ejercicio, que son $3$ y $4$. El $\text{m.c.m.}(3, 4) = 12$. Definimos:
+    $$x = u^{12}$$
+    Como la tendencia original es $x \to 1$, la nueva variable tiende a:
+    $$u = \sqrt[12]{x} \to \sqrt[12]{1} \implies u \to 1$$
+    \item \textbf{Reescritura de los términos del límite en términos de $u$:}
+    $$\sqrt[3]{x} = \sqrt[3]{u^{12}} = u^4, \quad \sqrt[4]{x} = \sqrt[4]{u^{12}} = u^3$$
+    Sustituyendo en el límite original:
+    $$\lim_{x\to 1} \frac{\sqrt[3]{x} - 1}{\sqrt[4]{x} - 1} = \lim_{u\to 1} \frac{u^4 - 1}{u^3 - 1}$$
+    \item \textbf{Factorización algebraica:}
+    \begin{itemize}
+        \item El numerador es una diferencia de cuadrados: $u^4 - 1 = (u^2 - 1)(u^2 + 1) = (u - 1)(u + 1)(u^2 + 1)$.
+        \item El denominador es una diferencia de cubos: $u^3 - 1 = (u - 1)(u^2 + u + 1)$.
+    \end{itemize}
+    \item \textbf{Simplificación y cálculo final:} Cancelamos el factor de indeterminación $(u - 1)$ para $u \neq 1$:
+    $$\lim_{u\to 1} \frac{(u - 1)(u + 1)(u^2 + 1)}{(u - 1)(u^2 + u + 1)} = \lim_{u\to 1} \frac{(u + 1)(u^2 + 1)}{u^2 + u + 1}$$
+    Evaluamos directamente sustituyendo $u = 1$:
+    $$\frac{(1 + 1)(1^2 + 1)}{1^2 + 1 + 1} = \frac{2 \cdot 2}{3} = \frac{4}{3}$$
+\end{enumerate}
+\textbf{Respuesta:} El valor del límite es $\mathbf{\frac{4}{3}}$.
+
+---
+
+\subsection{Resolución Sección II: Límites Trigonométricos Notables}
+
+\paragraph{Solución Ejercicio 4:}
+Sustituyendo directamente en la expresión obtenemos una indeterminación del tipo $\frac{0}{0}$ debido a que $\tan(0) = 0$ y $\sin(0) = 0$.
+\begin{enumerate}
+    \item \textbf{Expresión en términos de seno y coseno:} Escribimos la tangente por su definición:
+    $$\frac{ \tan(3x) }{ \sin(5x) } = \frac{ \sin(3x) }{ \cos(3x)\sin(5x) } = \frac{\sin(3x)}{\sin(5x)} \cdot \frac{1}{\cos(3x)}$$
+    \item \textbf{Uso de límites notables:} Multiplicamos y dividimos de manera conveniente por las variables del ángulo para forzar la propiedad notable:
+    $$\lim_{x\to 0} \left[ \frac{\sin(3x)}{\sin(5x)} \cdot \frac{1}{\cos(3x)} \right] = \lim_{x\to 0} \left[ \frac{\sin(3x)}{3x} \cdot \frac{5x}{\sin(5x)} \cdot \frac{3x}{5x} \cdot \frac{1}{\cos(3x)} \right]$$
+    Simplificamos la variable lineal $\frac{3x}{5x} = \frac{3}{5}$ para todo $x \neq 0$:
+    $$\lim_{x\to 0} \left[ \frac{\sin(3x)}{3x} \cdot \frac{1}{\frac{\sin(5x)}{5x}} \cdot \frac{3}{5} \cdot \frac{1}{\cos(3x)} \right]$$
+    \item \textbf{Aplicación de propiedades de límites:} Como $\lim_{x\to 0} \cos(3x) = 1$:
+    $$\left( \lim_{x\to 0} \frac{\sin(3x)}{3x} \right) \cdot \left( \frac{1}{\lim_{x\to 0} \frac{\sin(5x)}{5x}} \right) \cdot \frac{3}{5} \cdot \frac{1}{\lim_{x\to 0} \cos(3x)} = 1 \cdot \frac{1}{1} \cdot \frac{3}{5} \cdot \frac{1}{1} = \frac{3}{5}$$
+\end{enumerate}
+\textbf{Respuesta:} El límite es igual a $\mathbf{\frac{3}{5}}$.
+
+\paragraph{Solución Ejercicio 5:}
+La sustitución directa resulta en $\frac{\cos(\pi/4) - \sin(\pi/4)}{\pi - 4(\pi/4)} = \frac{\sqrt{2}/2 - \sqrt{2}/2}{\pi - \pi} = \frac{0}{0}$.
+\begin{enumerate}
+    \item \textbf{Cambio de variable:} Trasladamos el límite definiendo:
+    $$u = x - \frac{\pi}{4} \implies x = u + \frac{\pi}{4}$$
+    Si $x \to \frac{\pi}{4}$, entonces $u \to 0$.
+    \item \textbf{Transformación de la expresión:}
+    \begin{itemize}
+        \item \textbf{Denominador:} $\pi - 4x = \pi - 4\left(u + \frac{\pi}{4}\right) = \pi - 4u - \pi = -4u$.
+        \item \textbf{Numerador:} Aplicamos identidades de suma de ángulos para el seno y coseno:
+        $$\cos(x) - \sin(x) = \cos\left(u + \frac{\pi}{4}\right) - \sin\left(u + \frac{\pi}{4}\right)$$
+        $$\cos\left(u + \frac{\pi}{4}\right) = \cos(u)\cos\left(\frac{\pi}{4}\right) - \sin(u)\sin\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}\cos(u) - \frac{\sqrt{2}}{2}\sin(u)$$
+        $$\sin\left(u + \frac{\pi}{4}\right) = \sin(u)\cos\left(\frac{\pi}{4}\right) + \cos(u)\sin\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}\sin(u) + \frac{\sqrt{2}}{2}\cos(u)$$
+        Restando ambas expresiones:
+        $$\left( \frac{\sqrt{2}}{2}\cos(u) - \frac{\sqrt{2}}{2}\sin(u) \right) - \left( \frac{\sqrt{2}}{2}\sin(u) + \frac{\sqrt{2}}{2}\cos(u) \right) = -\sqrt{2}\sin(u)$$
+    \end{itemize}
+    \item \textbf{Evaluación del límite:} Reemplazamos los términos transformados:
+    $$\lim_{x\to \pi/4} \frac{\cos(x) - \sin(x)}{\pi - 4x} = \lim_{u\to 0} \frac{-\sqrt{2}\sin(u)}{-4u} = \frac{\sqrt{2}}{4} \lim_{u\to 0} \frac{\sin(u)}{u}$$
+    Utilizando la propiedad del límite trigonométrico notable:
+    $$\frac{\sqrt{2}}{4} \cdot 1 = \frac{\sqrt{2}}{4}$$
+\end{enumerate}
+\textbf{Respuesta:} El valor del límite es $\mathbf{\frac{\sqrt{2}}{4}}$.
+
+\paragraph{Solución Ejercicio 6:}
+Sustituyendo $x=0$, se genera la indeterminación $\frac{1-\cos^3(0)}{0 \cdot \sin(0)} = \frac{1-1}{0} = \frac{0}{0}$.
+\begin{enumerate}
+    \item \textbf{Factorización del numerador:} El término del numerador es una diferencia de cubos, $A^3 - B^3 = (A-B)(A^2+AB+B^2)$:
+    $$1 - \cos^3(x) = (1 - \cos(x))(1 + \cos(x) + \cos^2(x))$$
+    \item \textbf{Reorganización en límites elementales:} Escribimos la expresión separando el factor trigonométrico de la indeterminación:
+    $$\lim_{x\to 0} \frac{(1 - \cos(x))(1 + \cos(x) + \cos^2(x))}{x\sin(x)} = \lim_{x\to 0} \left[ \frac{1 - \cos(x)}{x\sin(x)} \cdot (1 + \cos(x) + \cos^2(x)) \right]$$
+    Multiplicamos y dividimos por $x$ para obtener límites notables conocidos en el denominador y el numerador:
+    $$\lim_{x\to 0} \left[ \frac{1 - \cos(x)}{x^2} \cdot \frac{x}{\sin(x)} \cdot (1 + \cos(x) + \cos^2(x)) \right]$$
+    \item \textbf{Cálculo de los límites individuales:}
+    \begin{itemize}
+        \item Primer límite notable: $\lim_{x\to 0} \frac{1-\cos(x)}{x^2} = \frac{1}{2}$.
+        \item Segundo límite notable: $\lim_{x\to 0} \frac{x}{\sin(x)} = \frac{1}{\lim \frac{\sin(x)}{x}} = 1$.
+        \item Evaluación directa: $\lim_{x\to 0} (1 + \cos(x) + \cos^2(x)) = 1 + 1 + 1^2 = 3$.
+    \end{itemize}
+    Multiplicando las componentes:
+    $$\lim_{x\to 0} \frac{1 - \cos^3(x)}{x\sin(x)} = \frac{1}{2} \cdot 1 \cdot 3 = \frac{3}{2}$$
+\end{enumerate}
+\textbf{Respuesta:} El valor del límite es $\mathbf{\frac{3}{2}}$.
+
+---
+
+\subsection{Resolución Sección III: Límites al Infinito y Asintóticos}
+
+\paragraph{Solución Ejercicio 7:}
+Se presenta una indeterminación del tipo $\frac{\infty}{\infty}$. Para resolverla de manera rigurosa, dividimos cada término del numerador y denominador por la potencia de mayor grado de la expresión, la cual corresponde a $x^3$:
+$$\lim_{x\to \infty} \frac{\frac{5x^3 - 2x + 1}{x^3}}{\frac{3 - 2x^2 - 4x^3}{x^3}} = \lim_{x\to \infty} \frac{5 - \frac{2}{x^2} + \frac{1}{x^3}}{\frac{3}{x^3} - \frac{2}{x} - 4}$$
+Aplicamos la propiedad de límites fundamentales para potencias inversas en el infinito, sabiendo que para cualquier constante real $k$ y potencia $p > 0$ se cumple que $\lim_{x\to\infty} \frac{k}{x^p} = 0$:
+$$\frac{\lim (5) - \lim (\frac{2}{x^2}) + \lim (\frac{1}{x^3})}{\lim (\frac{3}{x^3}) - \lim (\frac{2}{x}) - \lim (4)} = \frac{5 - 0 + 0}{0 - 0 - 4} = -\frac{5}{4}$$
+\textbf{Respuesta:} El valor del límite es $\mathbf{-\frac{5}{4}}$.
+
+\paragraph{Solución Ejercicio 8:}
+El límite es de la forma indeterminada $\infty - \infty$. Para resolver, multiplicamos y dividimos por el factor conjugado:
+$$\lim_{x\to +\infty} \left( \sqrt{x^2 + 5x} - x \right) \cdot \frac{\sqrt{x^2 + 5x} + x}{\sqrt{x^2 + 5x} + x}$$
+\begin{enumerate}
+    \item \textbf{Simplificación algebraica:} El producto de numeradores es una diferencia de cuadrados:
+    $$(\sqrt{x^2 + 5x} - x)(\sqrt{x^2 + 5x} + x) = (x^2 + 5x) - x^2 = 5x$$
+    Reescribimos el límite:
+    $$\lim_{x\to +\infty} \frac{5x}{\sqrt{x^2 + 5x} + x}$$
+    \item \textbf{Factorización del término principal en el denominador:} Extraemos factor común $x^2$ de la raíz cuadrada. Dado que $x \to +\infty$, se cumple que $x > 0$ y por ende $\sqrt{x^2} = |x| = x$:
+    $$\sqrt{x^2 + 5x} + x = \sqrt{x^2\left(1 + \frac{5}{x}\right)} + x = x\sqrt{1 + \frac{5}{x}} + x = x\left( \sqrt{1 + \frac{5}{x}} + 1 \right)$$
+    \item \textbf{Evaluación final del límite:} Cancelamos el término lineal $x$ para todo $x > 0$:
+    $$\lim_{x\to +\infty} \frac{5x}{x\left( \sqrt{1 + \frac{5}{x}} + 1 \right)} = \lim_{x\to +\infty} \frac{5}{\sqrt{1 + \frac{5}{x}} + 1}$$
+    Evaluando el límite en el infinito, donde $\lim \frac{5}{x} = 0$:
+    $$\frac{5}{\sqrt{1 + 0} + 1} = \frac{5}{1 + 1} = \frac{5}{2}$$
+\end{enumerate}
+\textbf{Respuesta:} El límite es igual a $\mathbf{\frac{5}{2}}$.
+
+\paragraph{Solución Ejercicio 9:}
+Al tender $x \to -\infty$, tanto el numerador como el denominador tienden a infinito, generando una indeterminación de tipo $\frac{\infty}{\infty}$. Dividimos por la variable dominante.
+\begin{enumerate}
+    \item \textbf{Análisis de la variable dominante:} La variable dominante en el numerador es $x$, y en el denominador es $\sqrt{x^2} = |x|$. Dado que la tendencia del límite es hacia el infinito negativo ($x \to -\infty$), los valores de $x$ son estrictamente negativos ($x < 0$). De acuerdo con la definición de valor absoluto:
+    $$\sqrt{x^2} = |x| = -x \implies x = -|x|$$
+    \item \textbf{División por $x$:} Dividimos el numerador y el denominador de la fracción racional por la variable lineal $x$:
+    $$\frac{2x - 3}{\sqrt{9x^2 + 4x - 1}} = \frac{\frac{2x - 3}{x}}{\frac{\sqrt{9x^2 + 4x - 1}}{x}}$$
+    Para introducir $x$ dentro de la raíz cuadrada del denominador, usamos el hecho de que para $x < 0$, $x = -\sqrt{x^2}$:
+    $$\frac{\sqrt{9x^2 + 4x - 1}}{x} = \frac{\sqrt{9x^2 + 4x - 1}}{-\sqrt{x^2}} = -\sqrt{\frac{9x^2 + 4x - 1}{x^2}} = -\sqrt{9 + \frac{4}{x} - \frac{1}{x^2}}$$
+    \item \textbf{Cálculo del límite:} Sustituimos las expresiones simplificadas en el límite:
+    $$\lim_{x\to -\infty} \frac{2 - \frac{3}{x}}{-\sqrt{9 + \frac{4}{x} - \frac{1}{x^2}}}$$
+    Dado que $\lim_{x\to -\infty} \frac{1}{x} = 0$:
+    $$\frac{2 - 0}{-\sqrt{9 + 0 - 0}} = \frac{2}{-\sqrt{9}} = -\frac{2}{3}$$
+\end{enumerate}
+\textbf{Respuesta:} El valor del límite es $\mathbf{-\frac{2}{3}}$.
+
+---
+
+\subsection{Resolución Sección IV: Continuidad y Teorema de Bolzano}
+
+\paragraph{Solución Ejercicio 10:}
+Para que la función por partes $f(x)$ sea continua en todo su dominio, debe cumplir con las condiciones de continuidad en las fronteras de sus ramas, las cuales son $x = -1$ y $x = 2$.
+\begin{enumerate}
+    \item \textbf{Continuidad en $x = -1$:} Debe cumplirse que $\lim_{x\to -1^-} f(x) = \lim_{x\to -1^+} f(x) = f(-1)$.
+    \begin{itemize}
+        \item Límite por la izquierda ($x \to -1^-$): $\lim_{x\to -1^-} (ax + b) = -a + b$.
+        \item Límite por la derecha ($x \to -1^+$): $\lim_{x\to -1^+} (x^2 - 2) = (-1)^2 - 2 = -1$.
+        \item Valor de la función: $f(-1) = (-1)^2 - 2 = -1$.
+    \end{itemize}
+    Establecemos la primera ecuación:
+    $$-a + b = -1 \implies a - b = 1 \quad \text{(Ecuación 1)}$$
+    
+    \item \textbf{Continuidad en $x = 2$:} Debe cumplirse que $\lim_{x\to 2^-} f(x) = \lim_{x\to 2^+} f(x) = f(2)$.
+    \begin{itemize}
+        \item Límite por la izquierda ($x \to 2^-$): $\lim_{x\to 2^-} (x^2 - 2) = 2^2 - 2 = 2$.
+        \item Valor de la función: $f(2) = 2^2 - 2 = 2$.
+        \item Límite por la derecha ($x \to 2^+$): $\lim_{x\to 2^+} \frac{2x - a}{x} = \frac{2(2) - a}{2} = \frac{4 - a}{2}$.
+    \end{itemize}
+    Establecemos la segunda ecuación e igualamos:
+    $$\frac{4 - a}{2} = 2 \implies 4 - a = 4 \implies a = 0$$
+    
+    \item \textbf{Resolución del sistema:} Sustituimos el valor de $a = 0$ en la Ecuación 1:
+    $$0 - b = 1 \implies b = -1$$
+\end{enumerate}
+\textbf{Respuesta:} Los valores requeridos son $\mathbf{a = 0}$ y $\mathbf{b = -1}$.
+
+\paragraph{Solución Ejercicio 11:}
+Queremos demostrar que la ecuación $x^5 - 3x - 1 = 0$ tiene al menos una raíz en el intervalo cerrado $I = [1, 2]$.
+\begin{enumerate}
+    \item \textbf{Definición de la función auxiliar:} Definimos la función continua $f: [1, 2] \to \mathbb{R}$ tal que:
+    $$f(x) = x^5 - 3x - 1$$
+    Esta función es continua en todo el intervalo $[1, 2]$ por ser un polinomio de grado 5 (los polinomios son continuos en toda la recta real).
+    \item \textbf{Evaluación en los extremos del intervalo:}
+    \begin{itemize}
+        \item Extremo izquierdo $x = 1$:
+        $$f(1) = 1^5 - 3(1) - 1 = 1 - 3 - 1 = -3$$
+        Notamos que $f(1) < 0$ (toma un valor negativo).
+        \item Extremo derecho $x = 2$:
+        $$f(2) = 2^5 - 3(2) - 1 = 32 - 6 - 1 = 25$$
+        Notamos que $f(2) > 0$ (toma un valor positivo).
+    \end{itemize}
+    \item \textbf{Aplicación del Teorema de Bolzano:} Como la función $f(x)$ es continua en el intervalo cerrado $[1, 2]$ y el signo de la función en los extremos difiere ($f(1) \cdot f(2) < 0$), el Teorema de Bolzano asegura que existe al menos un punto $c$ en el intervalo abierto $(1, 2)$ tal que:
+    $$f(c) = 0 \implies c^5 - 3c - 1 = 0$$
+\end{enumerate}
+Por lo tanto, queda demostrado que la ecuación posee al menos una solución real en $[1, 2]$.
+
+---
+
+\subsection{Resolución Sección V: Derivada por Definición}
+
+\paragraph{Solución Ejercicio 12:}
+La derivada de la función $f(x)$ por definición está dada por la expresión del límite del cociente de diferencias:
+$$f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}$$
+\begin{enumerate}
+    \item \textbf{Determinación de la diferencia de las funciones:} Sustituimos la función dada en el numerador:
+    $$f(x+h) - f(x) = \frac{1}{x+h+3} - \frac{1}{x+3}$$
+    Efectuamos la suma algebraica de fracciones buscando un denominador común:
+    $$f(x+h) - f(x) = \frac{(x+3) - (x+h+3)}{(x+h+3)(x+3)} = \frac{x + 3 - x - h - 3}{(x+h+3)(x+3)} = \frac{-h}{(x+h+3)(x+3)}$$
+    
+    \item \textbf{Planteamiento del cociente incremental:} Reemplazamos la diferencia obtenida en la definición:
+    $$\frac{f(x+h) - f(x)}{h} = \frac{\frac{-h}{(x+h+3)(x+3)}}{h}$$
+    Para todo incremento no nulo $h \neq 0$, simplificamos el término multiplicativo $h$ en la división de fracciones:
+    $$\frac{-h}{h(x+h+3)(x+3)} = \frac{-1}{(x+h+3)(x+3)}$$
+    
+    \item \textbf{Cálculo del límite:} Evaluamos el límite del cociente cuando $h$ tiende a $0$:
+    $$f'(x) = \lim_{h\to 0} \frac{-1}{(x+h+3)(x+3)}$$
+    Puesto que la función resultante es continua respecto a $h$ en una vecindad de cero, sustituimos $h = 0$:
+    $$f'(x) = \frac{-1}{(x + 0 + 3)(x + 3)} = \frac{-1}{(x+3)(x+3)} = -\frac{1}{(x+3)^2}$$
+\end{enumerate}
+\textbf{Respuesta:} La derivada de la función obtenida por definición es $\mathbf{f'(x) = -\frac{1}{(x+3)^2}}$.
+
+\end{document}
