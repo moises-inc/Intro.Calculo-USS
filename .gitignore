@@ -1,17 +1,25 @@
 # Archivos de Planificación y Planes de Estudio
-Planificación Introducción al cálculo 2026-10.pdf
-Plan_de_Estudio_Calculo.pdf
-Plan_de_Estudio_Calculo.md
-Números Reales - Intro al cálculo.pdf
+Teoria/Planificación Introducción al cálculo 2026-10.pdf
+Teoria/Plan_de_Estudio_Calculo.pdf
+Teoria/Plan_de_Estudio_Calculo.md
+Teoria/Apuntes/Números Reales - Intro al cálculo.pdf
 
 # Carpetas de Recursos Extras e Internos
-Extra/
 .antigravitycli/
 **/.antigravitycli/
 __pycache__/
 *.pyc
 
-# Carpeta de Presentación (Solemne 2) - Ignorar todo excepto .tex y .pdf
-Evaluaciones/Solemnes/Solemne 2/Presentación/*
-!Evaluaciones/Solemnes/Solemne 2/Presentación/*.tex
-!Evaluaciones/Solemnes/Solemne 2/Presentación/*.pdf
+# Archivos temporales de LaTeX globales
+*.aux
+*.log
+*.synctex.gz
+*.toc
+*.snm
+*.nav
+*.out
+
+# Carpeta de Presentación (Proyecto_Final) - Ignorar todo excepto .tex y .pdf
+Proyecto_Final/Presentación/*
+!Proyecto_Final/Presentación/*.tex
+!Proyecto_Final/Presentación/*.pdf
