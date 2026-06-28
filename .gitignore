@@ -19,7 +19,7 @@ __pycache__/
 *.nav
 *.out
 
-# Carpeta de Presentación (Proyecto_Final) - Ignorar todo excepto .tex y .pdf
-Proyecto_Final/Presentación/*
-!Proyecto_Final/Presentación/*.tex
-!Proyecto_Final/Presentación/*.pdf
+# Carpeta de Presentación (Solemne_2) - Ignorar todo excepto .tex y .pdf
+Evaluaciones/Solemnes/Solemne_2/Presentación/*
+!Evaluaciones/Solemnes/Solemne_2/Presentación/*.tex
+!Evaluaciones/Solemnes/Solemne_2/Presentación/*.pdf

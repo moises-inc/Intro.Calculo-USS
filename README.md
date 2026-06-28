@@ -29,8 +29,8 @@ El repositorio se encuentra estructurado de manera sistemática para organizar y
 *   **[`Evaluaciones/`](./Evaluaciones/)**: Historial evaluativo del curso:
     *   **[`Controles/`](./Evaluaciones/Controles/)**: Evaluaciones sistemáticas parciales (Controles 1 y 2) y sus pautas formales de resolución.
     *   **[`Solemnes/`](./Evaluaciones/Solemnes/)**: Certámenes solemnes (Solemne 1 y 2 en sus distintas formas) junto con presolemnes preparatorias.
-*   **[`Proyecto_Final/`](./Proyecto_Final/)**: Documentación, código y entregables del proyecto colaborativo del curso:
-    *   **[`Presentación/`](./Proyecto_Final/Presentación/)**: Archivos fuentes en LaTeX (`.tex`), diapositivas finales en PDF, simulaciones geométricas de GeoGebra (`.ggb`) e ilustraciones de soporte correspondientes a la defensa del proyecto final del **Grupo 3**.
+* **[Evaluaciones/Solemnes/Solemne_2/](./Evaluaciones/Solemnes/Solemne_2/)**: Documentación, código y entregables del trabajo colaborativo de la Solemne 2 (Grupo 3).
+    *   **[`Presentación/`](./Evaluaciones/Solemnes/Solemne_2/Presentación/)**: Archivos fuentes en LaTeX (`.tex`), diapositivas finales en PDF, simulaciones geométricas de GeoGebra (`.ggb`) e ilustraciones de soporte correspondientes a la defensa del Trabajo Colaborativo (Solemne 2) del **Grupo 3**.
 
 ---
 
@@ -77,7 +77,7 @@ Modelado y representación matemática de sistemas a través de la geometría an
 
 ---
 
-## 🚢 Resumen del Proyecto Final (Grupo 3)
+## 🚢 Resumen del Trabajo Colaborativo (Solemne 2) (Grupo 3)
 
 ### **Título:** *Modelamiento Geométrico de Cónicas Aplicado a Navegación Naval y Sistemas Aeroespaciales*
 
@@ -89,7 +89,7 @@ Modelado y representación matemática de sistemas a través de la geometría an
     *   María José Santander
     *   Juan Pablo Vargas
 
-El trabajo colaborativo del grupo explora la aplicación matemática práctica de las cónicas como herramienta fundamental de diseño y simulación en sistemas tecnológicos y de ingeniería en tres casos centrales:
+El Trabajo Colaborativo (Solemne 2) del grupo explora la aplicación matemática práctica de las cónicas como herramienta fundamental de diseño y simulación en sistemas tecnológicos y de ingeniería en tres casos centrales:
 
 1.  **Navegación de Sonar Submarino (Hipérbolas)**: Modelamiento matemático de la localización por diferencia en los tiempos de llegada de señales (TDOA) a múltiples sensores hidrofónicos fijos. La diferencia constante en las distancias a dos focos define ramas de hipérbolas. El punto de intersección de estas curvas hiperbólicas proporciona las coordenadas exactas de la fuente emisora (submarino o señal acústica).
 2.  **Telecomunicaciones Satelitales (Parábolas)**: Estudio y parametrización geométrica de las superficies reflectoras de antenas parabólicas. Utilizando la definición focal de la parábola, se demuestra cómo las señales paralelas que inciden en el plato reflector son dirigidas precisamente hacia el receptor colocado en el foco, optimizando la potencia de recepción de señales débiles provenientes del espacio exterior.
@@ -124,3 +124,6 @@ Para explorar los cuadernos interactivos de Jupyter:
 ```bash
 jupyter notebook "Guias_y_Talleres/Scripts/Geometria_Analitica/Cónicas.ipynb"
 ```
+
+## ⚖️ Licencia
+Este repositorio se encuentra distribuido bajo la [Licencia MIT](./LICENSE).
